@@ -74,6 +74,12 @@ func CommentGetAll(w http.ResponseWriter, r *http.Request) {
 	}
 
 	cComment.Find(&comments)
+
+	for i := range comments {
+		db.Model(&comments[i]).Related(&comments[i].User)
+		comments[i].User[0].Password = ""
+		comments[i].Children = commentGetChildren(comments[i].ID)
+	}
 	j, err := json.Marshal(comments)
 	if err != nil {
 		m.Code = http.StatusInternalServerError
@@ -91,4 +97,17 @@ func CommentGetAll(w http.ResponseWriter, r *http.Request) {
 		m.Message = "No se encontraron comentarios"
 		commons.DisplayMessage(w, m)
 	}
+}
+
+func commentGetChildren(id uint) (children []models.Comment) {
+	db := configuration.GetConnection()
+	defer db.Close()
+
+	db.Where("parent_id = ?", id).Find(&children)
+	for i := range children {
+		db.Model(&children[i]).Related(&children[i].User)
+		children[i].User[0].Password = ""
+	}
+	return
+
 }
