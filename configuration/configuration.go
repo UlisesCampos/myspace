@@ -10,7 +10,7 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-type Configuration struct {
+type configuration struct {
 	Server   string
 	Port     string
 	User     string
@@ -18,8 +18,8 @@ type Configuration struct {
 	Database string
 }
 
-func GetConfiguration() Configuration {
-	var c Configuration
+func GetConfiguration() configuration {
+	var c configuration
 	file, err := os.Open("./config.json")
 	if err != nil {
 		log.Fatal(err)
