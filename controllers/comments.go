@@ -7,7 +7,6 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/gorilla/mux"
 	"github.com/olahol/melody"
 	"golang.org/x/net/websocket"
 
@@ -68,8 +67,8 @@ func CommentCreate(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 
-	if _, err := ws.Write(j); != nil{
-		log.Fatla(err)
+	if _, err := ws.Write(j); err != nil {
+		log.Fatal(err)
 	}
 
 	m.Code = http.StatusCreated
