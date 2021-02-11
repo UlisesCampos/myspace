@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/UlisesCampos/myspace/commons"
-	"github.com/UlisesCampos/myspace/configuration"
-	"github.com/UlisesCampos/myspace/models"
+	"github.com/Neil-uli/myspace/commons"
+	"github.com/Neil-uli/myspace/configuration"
+	"github.com/Neil-uli/myspace/models"
 )
 
 // VoteRegister controlador para registrar un voto

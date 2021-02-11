@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"log"
 
-	"github.com/UlisesCampos/myspace/models"
+	"github.com/Neil-uli/myspace/models"
 	jwt "github.com/dgrijalva/jwt-go"
 )
 

@@ -6,9 +6,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/UlisesCampos/myspace/commons"
-	"github.com/UlisesCampos/myspace/migration"
-	"github.com/UlisesCampos/myspace/routes"
+	"github.com/Neil-uli/myspace/commons"
+	"github.com/Neil-uli/myspace/migration"
+	"github.com/Neil-uli/myspace/routes"
 	"github.com/urfave/negroni"
 )
 

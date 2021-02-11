@@ -4,7 +4,7 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/urfave/negroni"
 
-	"github.com/UlisesCampos/myspace/controllers"
+	"github.com/Neil-uli/myspace/controllers"
 )
 
 //SetVoteRouter es la ruta para el registro de un voto

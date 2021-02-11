@@ -10,9 +10,9 @@ import (
 	"github.com/olahol/melody"
 	"golang.org/x/net/websocket"
 
-	"github.com/UlisesCampos/myspace/commons"
-	"github.com/UlisesCampos/myspace/configuration"
-	"github.com/UlisesCampos/myspace/models"
+	"github.com/Neil-uli/myspace/commons"
+	"github.com/Neil-uli/myspace/configuration"
+	"github.com/Neil-uli/myspace/models"
 )
 
 //Melody permite utilizar realtime

@@ -4,8 +4,8 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/UlisesCampos/myspace/commons"
-	"github.com/UlisesCampos/myspace/models"
+	"github.com/Neil-uli/myspace/commons"
+	"github.com/Neil-uli/myspace/models"
 	jwt "github.com/dgrijalva/jwt-go"
 	"github.com/dgrijalva/jwt-go/request"
 )

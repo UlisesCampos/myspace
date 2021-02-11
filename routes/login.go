@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"github.com/UlisesCampos/myspace/controllers"
+	"github.com/Neil-uli/myspace/controllers"
 	"github.com/gorilla/mux"
 )
 

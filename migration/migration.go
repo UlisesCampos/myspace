@@ -1,8 +1,8 @@
 package migration
 
 import (
-	"github.com/UlisesCampos/myspace/configuration"
-	"github.com/UlisesCampos/myspace/models"
+	"github.com/Neil-uli/myspace/configuration"
+	"github.com/Neil-uli/myspace/models"
 )
 
 func Migrate() {
